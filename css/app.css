@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap');
+
 
 html, body {
   box-sizing: border-box;
@@ -7,8 +8,9 @@ html, body {
 }
 
 body {
+  background-color: #fff;
   color: #404040;
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-family: 'Inconsolata', monospace;
   font-size: 16px;
   padding: 24px;
 }
@@ -82,12 +84,12 @@ i {
   line-height: 1.5;
 }
 
-.face-icon { color: #c61721; }
-.heart-icon { color: #fb9397; }
-.work-icon { color: #7cb372; }
-.tool-icon { color: #c2e184; }
-.code-icon { color: #0b4449; }
-.email-icon { color: #1257c0; }
+.face-icon { color: #4D8B31; }
+.heart-icon { color: #4D8B31; }
+.work-icon { color: #FFC800; }
+.tool-icon { color: #FFC800; }
+.code-icon { color: #FFC800; }
+.email-icon { color: #FF8427; }
 
 @media only screen and (max-width: 600px) {
 
