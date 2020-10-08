@@ -1,38 +1,109 @@
-html, body{
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap');
+
+
+html, body {
+  box-sizing: border-box;
   height: 100%;
   overflow: auto;
 }
+
 body {
-  background: #94d995;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: center;
+  background-color: #fff;
+  color: #404040;
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
+  padding: 24px;
 }
-a {
-  color: black;
-  font-weight: 600;
-}
-a:hover {
+
+a, a:visited {
+  color: #404040;
+  font-weight: 400;
   text-decoration: none;
 }
-.msg-box {
-  
-  margin: 50px 0 50px 0;
+
+a:hover {
+  color: #808080;
 }
-h1 {
-  font-size: 48px;
-  text-transform: uppercase;
+
+hr {
+  border: solid 1px #808080;
+  height: 2px;
 }
-.contact-icons {
-  list-style: none;
-  padding-left: 0;
+
+i {
+  margin: 0 8px;
+  width: 24px;
+  text-align: center;
 }
-.contact-icons li {
+
+.dictionary-entry {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 300;
+  justify-content: center;
+  line-height: 1;
+}
+
+.dictionary-entry-angela {
+  text-align: left;
+}
+
+.dictionary-entry-name {
   display: inline-block;
-  padding: 1em;
+  font-size: 72px;
+  line-height: 1;
+  margin: 0;
 }
-#email a, #linkedin a, #github a {
-  color: black;
+
+.dictionary-entry-pronounciation {
+  display: inline-block;
+  margin-left: 16px;
+  vertical-align: super;
 }
-#email a:hover, #linkedin a:hover, #github a:hover {
-  opacity: 0.5;
+
+.dictionary-entry-definition {
+  line-height: 1.5;
+  padding: 16px 0;
+}
+
+.dictionary-entry-definition ul {
+  list-style: none;
+  margin: 8px 0;
+  padding-left: 8px;
+}
+
+.dictionary-entry-definition ul li {
+  display: flex;
+  margin: 8px 0;
+}
+
+.material-icons {
+  line-height: 1.5;
+}
+
+.face-icon { color: #4D8B31; }
+.heart-icon { color: #4D8B31; }
+.work-icon { color: #FFC800; }
+.tool-icon { color: #FFC800; }
+.code-icon { color: #FFC800; }
+.email-icon { color: #FF8427; }
+
+@media only screen and (max-width: 600px) {
+
+  .dictionary-entry {
+    font-size: 16px;
+    height: auto;
+  }
+
+  .dictionary-entry-name {
+    font-size: 56px;
+  }
+
+  .material-icons {
+    line-height: 1;
+  }
+
 }
