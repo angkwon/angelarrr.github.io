@@ -84,12 +84,9 @@ i {
   line-height: 1.5;
 }
 
-.face-icon { color: #4D8B31; }
-.heart-icon { color: #4D8B31; }
-.work-icon { color: #FFC800; }
-.tool-icon { color: #FFC800; }
-.code-icon { color: #FFC800; }
-.email-icon { color: #FF8427; }
+.face-icon, .heart-icon { color: #4D8B31; }
+.work-icon, .tool-icon, .code-icon { color: #FFC800; }
+.email-icon, .person-add { color: #FF8427; }
 
 @media only screen and (max-width: 600px) {
 
